@@ -1,55 +1,71 @@
+.header {
+    width: 940px;
+    height: 50px;
+    margin: 0px 150px 0px 150px;
+    padding-bottom: 33px;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: rgb(215, 68, 41);
+}
+
 a:link, a:visited {
-    color: blue;
-    text-decoration: blue;
+    color: rgb(37, 103, 153);
+    text-decoration: rgb(37, 103, 153);
     cursor: auto;
 }
 
 a:hover, a:active {
-    color: blueviolet;
+    color: rgb(110, 177, 32);
 }
 
 .header-communication-one {
     float: left;
     width: 250px;
-    margin-right: 30px;
+    margin: 25px 0px 25px 70px;
+    padding-right: 20px;
+    border-right-style: solid;
+    border-width: 1px;
+    border-color: rgb(209, 209, 209);
     text-align: right;
 }
 
 .header-communication-two {
     float: left;
-    width: 250px;
-    margin-right: 30px;
+    width: 200px;
+    margin: 25px 0px 25px 20px;
     text-align: left;
 }
 
 .main {
-    margin: auto;
-    width: 900px;
-    margin-bottom: 50px;
+    margin: 0px 150px 50px 150px;
+    width: 940px;
 }
 
 .main-block-one {
-    width: 900px;
-    text-align: left;
+    width: 940px;
 }
 
 .class-blocks {
-    width: 900px;
+    margin-bottom: 40px;
 }
 
 .class-block {
     text-align: right;
-    width: 200px;
-    margin-bottom: 50px;
+    width: 217px;
+    margin: 0px 20px 50px 0px;
     position: relative;
     display: inline-block;
 }
 
+.class-block.class-end {
+    margin-right: 0px;
+}
+
 .class-block-text {
     text-align: center;
-    color: dimgray;
-    background-color: gainsboro;
-    width: 200px;
+    color: rgb(82, 82, 82);
+    background-color: rgb(238, 238, 238);
+    width: 215px;
     height: 50px;
     position: relative;
     display: inline-block;
@@ -73,32 +89,43 @@ a:hover, a:active {
 }
 
 .class-block-text :hover {
-    background-color: green;
-    color: white;
+    background-color: rgb(110, 177, 32);
+    color: rgb(255, 255, 255)
 }
 
 .main-block-two {
-    width: 900px;
-    text-align: left;
+    width: 960px;
 }
 
 .diameter-blocks {
     float: left;
-    width: 200px;
+    width: 215px;
 }
 
 .diameter-block {
     float: left;
     text-align: center;
-    width: 80px;
-    margin-left: 20px;
-    border: 1px;
+    width: 75px;
+    height: 35px;
+    margin-left: 10px;
+    color: rgb(61, 61, 61);
+    border: 2px;
     border-style: solid;
+    border-color: rgb(229, 229, 229);
+    border-radius: 2px;
     margin-bottom: 50px;
 }
 
+.diameter-block.active {
+    background-color: rgb(110, 177, 32);
+}
+
+.diameter-block :last-child {
+    margin-top: 9px;
+}
+
 .main-block-three {
-    width: 900px;
+    width: 940px;
     text-align: left;
 }
 
@@ -111,22 +138,34 @@ a:hover, a:active {
 .size-block {
     float: left;
     text-align: center;
-    width: 100px;
-    border: 1px;
+    width: 90px;
+    height: 35px;
+    color: rgb(61, 61, 61);
+    border: 2px;
     border-style: solid;
+    border-color: rgb(229, 229, 229);
+    border-radius: 2px;
     margin-left: 20px;
     margin-bottom: 20px;
 }
 
+.size-block :last-child {
+    margin-top: 9px;
+}
+
+.size-block.active {
+    background-color: rgb(110, 177, 32);
+}
+
 .main-block {
-    background-color: gainsboro;
     float: left;
+    width: 313px;
+    height: 400px;
     line-height: 20px;
-    width: 300px;
     text-align: center;
 }
 
-.main :last-child {
+.main-last-text {
     text-align: center;
 }
 
@@ -137,13 +176,13 @@ footer {
 }
 
 .footer-question-one {
-    background-color: gainsboro;
+    background-color: rgb(238, 238, 238);
 }
 
 .footer-blocks-one {
     width: 900px;
     text-align: center;
-    background-color: gainsboro;
+    background-color: rgb(238, 238, 238);
 }
 
 .footer-block {
@@ -151,7 +190,7 @@ footer {
     width: 225px;
     height: 300px;
     margin-bottom: 40px;
-    background-color: gainsboro;
+    background-color: rgb(238, 238, 238);
 }
 
 .footer-blocks-two {
@@ -169,7 +208,7 @@ footer {
 }
 
 .footer-blocks-three {
-    background-color: gainsboro;
+    background-color: rgb(238, 238, 238);
 }
 
 #e-mail-input {

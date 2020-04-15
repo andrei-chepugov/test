@@ -10,22 +10,34 @@
 
 <body class="container">
     <header>
-        <img src="images/Michelin.png" alt="MICHELIN" style="margin-left: 150px; float:left; margin-right:150px;">
-        <div class="header-communication-one"><img src="images/iPhone.png" alt="Телефон" style="float:left;">
-            <b>(067) 405 23 53, (050) 461 17 14</b>
+        <div class="header">
+            <img src="images/Michelin.png" alt="MICHELIN" style="margin: 25px 160px 25px 0px; float:left;">
+            <div class="header-communication">
+                <div class="header-communication-one">
+                    <div><img src="images/iPhone.png" alt="Телефон">
+                        <b>(067) 405 23 53, (050) 461 17 14</b>
+                    </div>
+                    <div><small>Смотреть другие номера</small></div>
+                </div>
+                <div class="header-communication-two">
+                    <a href=""><b>Заказать обратный звонок</b></a>
+
+                    <div><a href="">
+                            <div><img src="images/Online.png" alt="Online" style="float: left;"></div>Чат с
+                            консультантом
+                        </a></div>
+                </div>
+            </div>
         </div>
-        <a href="" class="header-communication-two">Заказать обратный звонок</a>
-        <div class="header-communication-one"><small>Смотреть другие номера</small></div>
-        <a href="" class="header-communication-two">Online Чат с консультантом</a>
-        <img src="images/HeadAuto.png" alt="Автомобиль с колёсами">
     </header>
+    <img src="images/HeadAuto.png" alt="Автомобиль с колёсами" style="width: 100%;">
     <div class="main">
         <div class="main-block-one">
             <img src="images/1.png" alt="1" style="float: left;">
             <div class="class-blocks"><b>Выберите класс авто:</b></div>
             <div class="class-block"><img src="images/SmallAuto.png" alt="Небольшие автомобили">
                 <div class="class-block-text">
-                    Небольшие автомобили
+                    <div>Небольшие автомобили</div>
                     <div class="dropdown-content">
                         <span>Автомобили с максимальной скоростью не выше 190км/ч</span>
                         <span><b>Автомобили данной категории: </b>Fiat Punto, Renault Clio, Peugeot 207, Citroen C1,
@@ -35,7 +47,7 @@
             </div>
             <div class="class-block"><img src="images/MediumAuto.png" alt="Средний класс">
                 <div class="class-block-text">
-                    Средний класс
+                    <div>Средний класс</div>
                     <div class="dropdown-content">
                         <span>Автомобили с максимальной скоростью не выше 190км/ч</span>
                         <span><b>Автомобили данной категории: </b>Fiat Punto, Renault Clio, Peugeot 207, Citroen C1,
@@ -45,7 +57,7 @@
             </div>
             <div class="class-block"><img src="images/PremiumAuto.png" alt="Премиум класс и спортивные автомобили">
                 <div class="class-block-text">
-                    Премиум класс и спортивные автомобили
+                    <div>Премиум класс и спортивные автомобили</div>
                     <div class="dropdown-content">
                         <span>Автомобили с максимальной скоростью не выше 190км/ч</span>
                         <span><b>Автомобили данной категории: </b>Fiat Punto, Renault Clio, Peugeot 207, Citroen C1,
@@ -53,9 +65,9 @@
                     </div>
                 </div>
             </div>
-            <div class="class-block"><img src="images/LargeAuto.png" alt="Легкогрузовые">
+            <div class="class-block class-end"><img src="images/LargeAuto.png" alt="Легкогрузовые">
                 <div class="class-block-text">
-                    Легкогрузовые
+                    <div>Легкогрузовые</div>
                     <div class="dropdown-content">
                         <span>Автомобили с максимальной скоростью не выше 190км/ч</span>
                         <span><b>Автомобили данной категории: </b>Fiat Punto, Renault Clio, Peugeot 207, Citroen C1,
@@ -67,35 +79,63 @@
         <div class="main-block-two">
             <img src="images/2.png" alt="2" style="float: left;">
             <div class="diameter-blocks"><b>Выберите диаметр шины:</b></div>
-            <div class="diameter-block">R 13</div>
-            <div class="diameter-block">R 13 C</div>
-            <div class="diameter-block">R 14</div>
-            <div class="diameter-block">R 14 C</div>
-            <div class="diameter-block">R 15</div>
-            <div class="diameter-block">R 15 C</div>
+            <div class="diameter-block">
+                <div><b>R 13</b></div>
+            </div>
+            <div class="diameter-block">
+                <div><b>R 13 C</b></div>
+            </div>
+            <div class="diameter-block">
+                <div><b>R 14</b></div>
+            </div>
+            <div class="diameter-block active">
+                <div><b>R 14 C</b></div>
+            </div>
+            <div class="diameter-block">
+                <div><b>R 15</b></div>
+            </div>
+            <div class="diameter-block">
+                <div><b>R 15 C</b></div>
+            </div>
         </div>
         <div class="main-block-three">
             <img src="images/3.png" alt="3" style="float: left;">
             <div class="size-blocks"><b>Выберите ширину/высоту шины:</b></div>
-            <div class="size-block">185/80</div>
-            <div class="size-block">185/80</div>
-            <div class="size-block">185/80</div>
-            <div class="size-block">185/80</div>
-            <div class="size-block">185/80</div>
-            <div class="size-block">185/80</div>
-            <div class="size-block">185/80</div>
-            <div class="size-block">185/80</div>
+            <div class="size-block">
+                <div><b>185/80</b></div>
+            </div>
+            <div class="size-block">
+                <div><b>185/80</b></div>
+            </div>
+            <div class="size-block">
+                <div><b>185/80</b></div>
+            </div>
+            <div class="size-block">
+                <div><b>185/80</b></div>
+            </div>
+            <div class="size-block active">
+                <div><b>185/80</b></div>
+            </div>
+            <div class="size-block">
+                <div><b>185/80</b></div>
+            </div>
+            <div class="size-block">
+                <div><b>185/80</b></div>
+            </div>
+            <div class="size-block">
+                <div><b>185/80</b></div>
+            </div>
 
         </div>
         <img src="images/GreenLine.png" alt="Green Line">
         <div>Мы подобрали летние шины типоразмера 185/80 R14C для среднего класса авто</div>
         <div class="main-block"><img src="images/Wheel.png" alt="Колесо"></div>
         <div class="main-block"><img src="images/Wheel.png" alt="Колесо"></div>
-        <div class="main-block"><img src="images/Wheel.png" alt="КОлесо"></div>
+        <div class="main-block main-end"><img src="images/Wheel.png" alt="КОлесо"></div>
         <div class="main-block"><img src="images/Wheel.png" alt="Колесо"></div>
         <div class="main-block"><img src="images/Wheel.png" alt="Колесо"></div>
-        <div class="main-block"><img src="images/Wheel.png" alt="Колесо"></div>
-        <div>
+        <div class="main-block main-end"><img src="images/Wheel.png" alt="Колесо"></div>
+        <div class="main-last-text">
             <div>Мы подобрали для Вашего авто только <b>самые популярные</b> среди украинских автомоилистов модели.
             </div>
             <a href="">Посмотреть все предложения для Вашего авто</a>
