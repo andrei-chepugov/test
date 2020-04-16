@@ -1,228 +1,346 @@
-.header {
-    width: 940px;
-    height: 50px;
-    margin: 0px 150px 0px 150px;
-    padding-bottom: 33px;
-    border-bottom-style: solid;
-    border-width: 2px;
-    border-color: rgb(215, 68, 41);
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.text-large {
+    font-size: 18px;
+}
+
+.text-small {
+    font-size: 14px;
+    color: rgb(144, 144, 144);
 }
 
 a:link, a:visited {
     color: rgb(37, 103, 153);
-    text-decoration: rgb(37, 103, 153);
-    cursor: auto;
 }
 
 a:hover, a:active {
     color: rgb(110, 177, 32);
 }
 
-.header-communication-one {
+.container {
+    width: 940px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+header .container {
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: rgb(215, 68, 41);
+    text-align: right;
+}
+
+.header-logo {
     float: left;
-    width: 250px;
-    margin: 25px 0px 25px 70px;
-    padding-right: 20px;
+}
+
+.header-communication-one {
+    display: inline-block;
+    padding-right: 15px;
     border-right-style: solid;
     border-width: 1px;
-    border-color: rgb(209, 209, 209);
+    border-color: rgb(238, 238, 238);
     text-align: right;
+}
+
+.icon-phone {
+    vertical-align: middle;
+}
+
+a.link-phone {
+    color: black;
+    padding-top: 5px;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+a.other-phones {
+    color: rgb(37, 103, 153);
+    text-decoration-style: dotted;
+}
+
+a.other-phones:after {
+    content: "";
+    position: relative;
+    top: 12px;
+    left: 3px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid rgb(37, 103, 153);
 }
 
 .header-communication-two {
-    float: left;
-    width: 200px;
-    margin: 25px 0px 25px 20px;
+    display: inline-block;
+    padding-left: 15px;
     text-align: left;
 }
 
-.main {
-    margin: 0px 150px 50px 150px;
-    width: 940px;
+.link-order {
+    text-decoration: none;
 }
 
-.main-block-one {
-    width: 940px;
+.banner {
+    width: 100%;
+    margin-bottom: -50px;
 }
 
-.class-blocks {
-    margin-bottom: 40px;
+.clear {
+    clear: both;
 }
 
-.class-block {
-    text-align: right;
-    width: 217px;
-    margin: 0px 20px 50px 0px;
-    position: relative;
+h1 {
     display: inline-block;
 }
 
-.class-block.class-end {
-    margin-right: 0px;
+.h1-triangle-green-one {
+    color: white;
+    font-size: large;
+    padding: 15px 25px 25px 25px;
+    background-image: url("images/1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-.class-block-text {
+.car-type {
+    padding-top: 50px;
+    float: left;
+    width: 225px;
+    margin: 5px;
+}
+
+.car-type-headline {
+    background-color: rgb(208, 208, 208);
+    border-radius: 5px 5px 0 0;
+}
+
+.car-type-titleline {
     text-align: center;
-    color: rgb(82, 82, 82);
-    background-color: rgb(238, 238, 238);
-    width: 215px;
-    height: 50px;
-    position: relative;
-    display: inline-block;
-    border-radius: 5px;
+    padding: 10px;
+    min-height: 35px;
+    border-radius: 0 0 5px 5px;
+    background-color: rgb(238, 238, 238)
 }
 
-.dropdown-content {
+.car-type-titleline:hover {
+    background-color: rgb(110, 177, 32);
+}
+
+.car-image {
+    right: 10px;
+    bottom: -10px;
+    position: absolute;
+}
+
+.car-type-dropdown-content {
     text-align: left;
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 400px;
+    background-color: rgb(238, 238, 238);
+    max-width: 405px;
     min-height: 50px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     padding: 12px 16px;
     z-index: 1;
 }
 
-.class-block:hover .dropdown-content {
+.car-type-titleline:hover+.car-type-dropdown-content {
     display: block;
 }
 
-.class-block-text :hover {
-    background-color: rgb(110, 177, 32);
-    color: rgb(255, 255, 255)
+.h1-triangle-green-two {
+    color: white;
+    font-size: large;
+    padding: 15px 25px 25px 25px;
+    background-image: url("images/2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-.main-block-two {
-    width: 960px;
-}
-
-.diameter-blocks {
-    float: left;
-    width: 215px;
+.diameters-container {
+    float: right;
+    width: 550px;
+    padding-top: 15px;
 }
 
 .diameter-block {
     float: left;
     text-align: center;
-    width: 75px;
-    height: 35px;
-    margin-left: 10px;
+    width: 70px;
+    height: 30px;
     color: rgb(61, 61, 61);
     border: 2px;
     border-style: solid;
     border-color: rgb(229, 229, 229);
-    border-radius: 2px;
+    border-radius: 5px;
+    margin-left: 10px;
     margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.diameter-block :last-child {
+    margin-top: 5px;
+}
+
+.diameter-block:hover {
+    background-color: rgb(240, 240, 240);
 }
 
 .diameter-block.active {
     background-color: rgb(110, 177, 32);
 }
 
-.diameter-block :last-child {
-    margin-top: 9px;
+.h1-triangle-orange-three {
+    color: white;
+    font-size: large;
+    padding: 15px 25px 25px 25px;
+    background-image: url("images/3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-.main-block-three {
-    width: 940px;
-    text-align: left;
-}
-
-.size-blocks {
-    float: left;
-    width: 250px;
-    height: 200px;
+.sizes-container {
+    float: right;
+    width: 500px;
+    padding-top: 10px;
 }
 
 .size-block {
-    float: left;
     text-align: center;
+    vertical-align: middle;
+    display: inline-block;
     width: 90px;
-    height: 35px;
+    height: 30px;
     color: rgb(61, 61, 61);
     border: 2px;
     border-style: solid;
     border-color: rgb(229, 229, 229);
-    border-radius: 2px;
+    border-radius: 5px;
     margin-left: 20px;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .size-block :last-child {
-    margin-top: 9px;
+    margin-top: 5px;
+}
+
+.size-block:hover {
+    background-color: rgb(230, 230, 230);
 }
 
 .size-block.active {
     background-color: rgb(110, 177, 32);
 }
 
-.main-block {
+.tires-container {
+    float: right;
+    width: 940px;
+    padding-top: 10px;
+}
+
+.tire-block {
     float: left;
-    width: 313px;
+    width: 285px;
     height: 400px;
     line-height: 20px;
     text-align: center;
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(229, 229, 229);
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
 }
 
-.main-last-text {
+.tire-name {
+    text-align: left;
+}
+
+.tire-proposal {
     text-align: center;
 }
 
 footer {
     text-align: center;
-    width: 900px;
+    width: 100%;
     margin: auto;
 }
 
-.footer-question-one {
+.footer-background-one {
+    width: 100%;
+    height: 350px;
     background-color: rgb(238, 238, 238);
 }
 
-.footer-blocks-one {
-    width: 900px;
-    text-align: center;
-    background-color: rgb(238, 238, 238);
-}
-
-.footer-block {
+.advantage-block {
     float: left;
-    width: 225px;
-    height: 300px;
-    margin-bottom: 40px;
-    background-color: rgb(238, 238, 238);
+    width: 230px;
+    height: 260px;
+    margin-top: 10px;
 }
 
-.footer-blocks-two {
-    width: 900px;
-    background-color: white;
+.footer-background-two {
+    width: 100%;
+    height: 250px;
 }
 
-.question-block {
+.communication-block {
     float: left;
     margin-top: 20px;
     margin-bottom: 50px;
     width: 300px;
     height: 100px;
-    background-color: white;
 }
 
-.footer-blocks-three {
+.manager {
+    text-align: left;
+}
+
+a.footer-link-phone {
+    font-size: 25px;
+    color: black;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.subscribe-block {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-background-three {
+    width: 100%;
+    height: 150px;
     background-color: rgb(238, 238, 238);
 }
 
-#e-mail-input {
+.e-mail-input {
+    position: relative;
+    padding: 0px;
     float: left;
-    margin-left: 100px;
+    margin-left: 180px;
     margin-right: 0px;
     width: 400px;
-    height: 30px;
+    height: 38px;
     border: 1px;
+    border-radius: 3px;
     border-style: solid;
 }
 
-#e-mail-botton {
-    width: 200px;
-    height: 35px;
-    margin-right: 198px;
+.e-mail-botton {
+    position: relative;
+    border: none;
+    margin-right: 200px;
+    margin-top: -1px;
 }

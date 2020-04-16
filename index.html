@@ -8,189 +8,284 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
-<body class="container">
+<body>
+
     <header>
-        <div class="header">
-            <img src="images/Michelin.png" alt="MICHELIN" style="margin: 25px 160px 25px 0px; float:left;">
+        <div class="container">
+            <div class="header-logo">
+                <img class="logo" src="images/Michelin.png" alt="MICHELIN">
+            </div>
             <div class="header-communication">
                 <div class="header-communication-one">
-                    <div><img src="images/iPhone.png" alt="Телефон">
-                        <b>(067) 405 23 53, (050) 461 17 14</b>
+                    <div class="line1">
+                        <img src="images/iPhone.png" class="icon-phone" alt="Телефон">
+                        <a href="tel:0674052353" class="link-phone"><b>(067) 405 23 53</b></a>,
+                        <a href="tel:0504611714" class="link-phone"><b>(050) 461 17 14</b></a>
                     </div>
-                    <div><small>Смотреть другие номера</small></div>
+                    <div>
+                        <a href="" class="other-phones">Смотреть другие номера</a>
+                    </div>
                 </div>
                 <div class="header-communication-two">
-                    <a href=""><b>Заказать обратный звонок</b></a>
-
-                    <div><a href="">
-                            <div><img src="images/Online.png" alt="Online" style="float: left;"></div>Чат с
-                            консультантом
-                        </a></div>
+                    <a href="" class="link-order">
+                        <b>Заказать обратный звонок</b>
+                    </a>
+                    <div>
+                        <a href="" class="link-order">
+                            <img src="images/Online.png" alt="Online">
+                            <b>Чат</b> с консультантом
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
-    <img src="images/HeadAuto.png" alt="Автомобиль с колёсами" style="width: 100%;">
-    <div class="main">
-        <div class="main-block-one">
-            <img src="images/1.png" alt="1" style="float: left;">
-            <div class="class-blocks"><b>Выберите класс авто:</b></div>
-            <div class="class-block"><img src="images/SmallAuto.png" alt="Небольшие автомобили">
-                <div class="class-block-text">
-                    <div>Небольшие автомобили</div>
-                    <div class="dropdown-content">
-                        <span>Автомобили с максимальной скоростью не выше 190км/ч</span>
-                        <span><b>Автомобили данной категории: </b>Fiat Punto, Renault Clio, Peugeot 207, Citroen C1,
-                            Ford Fiesta.</span>
-                    </div>
-                </div>
-            </div>
-            <div class="class-block"><img src="images/MediumAuto.png" alt="Средний класс">
-                <div class="class-block-text">
-                    <div>Средний класс</div>
-                    <div class="dropdown-content">
-                        <span>Автомобили с максимальной скоростью не выше 190км/ч</span>
-                        <span><b>Автомобили данной категории: </b>Fiat Punto, Renault Clio, Peugeot 207, Citroen C1,
-                            Ford Fiesta.</span>
-                    </div>
-                </div>
-            </div>
-            <div class="class-block"><img src="images/PremiumAuto.png" alt="Премиум класс и спортивные автомобили">
-                <div class="class-block-text">
-                    <div>Премиум класс и спортивные автомобили</div>
-                    <div class="dropdown-content">
-                        <span>Автомобили с максимальной скоростью не выше 190км/ч</span>
-                        <span><b>Автомобили данной категории: </b>Fiat Punto, Renault Clio, Peugeot 207, Citroen C1,
-                            Ford Fiesta.</span>
-                    </div>
-                </div>
-            </div>
-            <div class="class-block class-end"><img src="images/LargeAuto.png" alt="Легкогрузовые">
-                <div class="class-block-text">
-                    <div>Легкогрузовые</div>
-                    <div class="dropdown-content">
-                        <span>Автомобили с максимальной скоростью не выше 190км/ч</span>
-                        <span><b>Автомобили данной категории: </b>Fiat Punto, Renault Clio, Peugeot 207, Citroen C1,
-                            Ford Fiesta.</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="main-block-two">
-            <img src="images/2.png" alt="2" style="float: left;">
-            <div class="diameter-blocks"><b>Выберите диаметр шины:</b></div>
-            <div class="diameter-block">
-                <div><b>R 13</b></div>
-            </div>
-            <div class="diameter-block">
-                <div><b>R 13 C</b></div>
-            </div>
-            <div class="diameter-block">
-                <div><b>R 14</b></div>
-            </div>
-            <div class="diameter-block active">
-                <div><b>R 14 C</b></div>
-            </div>
-            <div class="diameter-block">
-                <div><b>R 15</b></div>
-            </div>
-            <div class="diameter-block">
-                <div><b>R 15 C</b></div>
-            </div>
-        </div>
-        <div class="main-block-three">
-            <img src="images/3.png" alt="3" style="float: left;">
-            <div class="size-blocks"><b>Выберите ширину/высоту шины:</b></div>
-            <div class="size-block">
-                <div><b>185/80</b></div>
-            </div>
-            <div class="size-block">
-                <div><b>185/80</b></div>
-            </div>
-            <div class="size-block">
-                <div><b>185/80</b></div>
-            </div>
-            <div class="size-block">
-                <div><b>185/80</b></div>
-            </div>
-            <div class="size-block active">
-                <div><b>185/80</b></div>
-            </div>
-            <div class="size-block">
-                <div><b>185/80</b></div>
-            </div>
-            <div class="size-block">
-                <div><b>185/80</b></div>
-            </div>
-            <div class="size-block">
-                <div><b>185/80</b></div>
-            </div>
 
-        </div>
-        <img src="images/GreenLine.png" alt="Green Line">
-        <div>Мы подобрали летние шины типоразмера 185/80 R14C для среднего класса авто</div>
-        <div class="main-block"><img src="images/Wheel.png" alt="Колесо"></div>
-        <div class="main-block"><img src="images/Wheel.png" alt="Колесо"></div>
-        <div class="main-block main-end"><img src="images/Wheel.png" alt="КОлесо"></div>
-        <div class="main-block"><img src="images/Wheel.png" alt="Колесо"></div>
-        <div class="main-block"><img src="images/Wheel.png" alt="Колесо"></div>
-        <div class="main-block main-end"><img src="images/Wheel.png" alt="Колесо"></div>
-        <div class="main-last-text">
-            <div>Мы подобрали для Вашего авто только <b>самые популярные</b> среди украинских автомоилистов модели.
+    <main>
+        <section>
+            <img src="images/HeadAuto.png" alt="Автомобиль с колёсами" class="banner">
+        </section>
+
+        <section id="vehicle-class" class="clear">
+            <div class="container">
+                <h1>
+                    <span class="h1-triangle-green-one">1</span>Выберите класс авто:
+                </h1>
+                <div class="cars-container">
+                    <div class="car-type">
+                        <div class="car-type-headline">
+                            <span>&nbsp</span>
+                            <div style="position: relative">
+                                <img src="images/SmallAuto.png" class="car-image">
+                            </div>
+                        </div>
+                        <div class="car-type-titleline">Небольшие автомобили</div>
+                        <div class="car-type-dropdown-content">
+                            <span>Автомобили с максимальной скоростью не выше 190км/ч</span>
+                            <p><b>Автомобили данной категории: </b>Fiat Punto, Renault Clio, Peugeot 207, Citroen C1,
+                                Ford Fiesta.</p>
+                        </div>
+                    </div>
+                    <div class="car-type">
+                        <div class="car-type-headline">
+                            <span>&nbsp</span>
+                            <div style="position: relative">
+                                <img src="images/MediumAuto.png" class="car-image">
+                            </div>
+                        </div>
+                        <div class="car-type-titleline">Средний класс</div>
+                        <div class="car-type-dropdown-content">
+                            <span>Автомобили с максимальной скоростью не выше 190км/ч</span>
+                            <p><b>Автомобили данной категории: </b>Fiat Punto, Renault Clio, Peugeot 207, Citroen C1,
+                                Ford Fiesta.</p>
+                        </div>
+                    </div>
+                    <div class="car-type">
+                        <div class="car-type-headline">
+                            <span>&nbsp</span>
+                            <div style="position: relative">
+                                <img src="images/PremiumAuto.png" class="car-image">
+                            </div>
+                        </div>
+                        <div class="car-type-titleline">Премиум класс и спортивные автомобили</div>
+                        <div class="car-type-dropdown-content">
+                            <span>Автомобили с максимальной скоростью не выше 190км/ч</span>
+                            <p><b>Автомобили данной категории: </b>Fiat Punto, Renault Clio, Peugeot 207, Citroen C1,
+                                Ford Fiesta.</p>
+                        </div>
+                    </div>
+                    <div class="car-type">
+                        <div class="car-type-headline">
+                            <span>&nbsp</span>
+                            <div style="position: relative">
+                                <img src="images/LargeAuto.png" class="car-image">
+                            </div>
+                        </div>
+                        <div class="car-type-titleline">Легкогрузовые</div>
+                        <div class="car-type-dropdown-content">
+                            <span>Автомобили с максимальной скоростью не выше 190км/ч</span>
+                            <p><b>Автомобили данной категории: </b>Fiat Punto, Renault Clio, Peugeot 207, Citroen C1,
+                                Ford Fiesta.</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="tire-diameter" class="clear">
+            <div class="container">
+                <h1>
+                    <span class="h1-triangle-green-two">2</span>Выберите диаметр шины:
+                </h1>
+                <div class="diameters-container text-large">
+                    <div class="diameter-block">
+                        <p>R 13</p>
+                    </div>
+                    <div class="diameter-block">
+                        <p>R 13 C</p>
+                    </div>
+                    <div class="diameter-block">
+                        <p>R 14</p>
+                    </div>
+                    <div class="diameter-block active">
+                        <p>R 14 C</p>
+                    </div>
+                    <div class="diameter-block">
+                        <p>R 15</p>
+                    </div>
+                    <div class="diameter-block">
+                        <p>R 15 C</p>
+                    </div>
+                </div>
             </div>
-            <a href="">Посмотреть все предложения для Вашего авто</a>
-        </div>
-    </div>
+        </section>
+
+        <section id="tire-size" class="clear">
+            <div class="container">
+                <h1>
+                    <span class="h1-triangle-orange-three">3</span>Выберите ширину/высоту шины:
+                </h1>
+
+                <div class="sizes-container text-large">
+                    <div class="size-block">
+                        <p>185/80</p>
+                    </div>
+                    <div class="size-block">
+                        <p>185/80</p>
+                    </div>
+                    <div class="size-block">
+                        <p>185/80</p>
+                    </div>
+                    <div class="size-block">
+                        <p>185/80</p>
+                    </div>
+                    <div class="size-block active">
+                        <p>185/80</p>
+                    </div>
+                    <div class="size-block">
+                        <p>185/80</p>
+                    </div>
+                    <div class="size-block">
+                        <p>185/80</p>
+                    </div>
+                    <div class="size-block">
+                        <p>185/80</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tire-sale" class="clear">
+            <div class="container">
+                <img src="images/GreenLine.png" alt="Green Line">
+                <div>Мы подобрали летние шины типоразмера 185/80 R14C для среднего класса авто</div>
+                <div class="tires-container">
+                    <div class="tire-block">
+                        <div class="tire">
+                            <div class="tire-name"><b>Michelin Agilis</b></div>
+                            <img src="images/Wheel.png" alt="Колесо">
+                        </div>
+                    </div>
+                    <div class="tire-block">
+                        <div class="tire-name">
+                            <div class="tire-name"><b>Michelin Agilis</b></div>
+                            <img src="images/Wheel.png" alt="Колесо">
+                        </div>
+                    </div>
+                    <div class="tire-block">
+                        <div class="tire">
+                            <div class="tire-name"><b>Michelin Agilis</b></div>
+                            <img src="images/Wheel.png" alt="Колесо">
+                        </div>
+                    </div>
+                    <div class="tire-block">
+                        <div class="tire">
+                            <div class="tire-name"><b>Michelin Agilis</b></div>
+                            <img src="images/Wheel.png" alt="Колесо">
+                        </div>
+                    </div>
+                    <div class="tire-block">
+                        <div class="tire">
+                            <div class="tire-name"><b>Michelin Agilis</b></div>
+                            <img src="images/Wheel.png" alt="Колесо">
+                        </div>
+                    </div>
+                    <div class="tire-block">
+                        <div class="tire">
+                            <div class="tire-name"><b>Michelin Agilis</b></div>
+                            <img src="images/Wheel.png" alt="Колесо">
+                        </div>
+                    </div>
+                </div>
+                <div class="tire-proposal">
+                    <div>Мы подобрали для Вашего авто только <b>самые популярные</b> среди украинских автомоилистов
+                        модели.
+                    </div>
+                    <a href="">Посмотреть все предложения для Вашего авто</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        <div class="footer-question-one"><b>Почему летний шины покупают у нас?</b></div>
-        <div class="footer-blocks-one">
-            <div class="footer-block"><img src="images/AutoRIA.png" alt="AUTO.RIA">
-                <div><strong>Нам доверяют</strong></div>
-                <div>нтернет-магазин автомобильного сайта №1 в Украине AUTO.RIA.con</div>
-            </div>
-            <div class="footer-block"><img src="images/Shipping.png" alt="Shipping">
-                <div><strong>Выгодно</strong></div>
-                <div>Бесплатная доставка по Украине курьерскими службами</div>
-                <img src="images/InTime+NovaPoshta.png" ale="InTime и NovaPoshta">
-            </div>
-            <div class="footer-block"><img src="images/Cash.png" alt="Cash">
-                <div><strong>Без предоплат</strong></div>
-                <div>Оплата только после получений товара</div>
-            </div>
-            <div class="footer-block"><img src="images/24_7.png" alt="24/7">
-                <div><strong>Работаем</strong></div>
-                <div>Примем заказов по телефону и на сайте круглосуточно</div>
-            </div>
-        </div>
-        <div class="footer-question-two"><b>Остались вопросы?</b></div>
-        <div class="footer-blocks-two">
-            <div class="question-block">
-                <div><b>Телефон менеджера</b></div>
-                <div>для вопросов и консультации</div>
-                <img src="images/photo.png" alt="Константин Озаренский" style="float: left;">
-                <div>Константин Озаренский</div>
-                <div>Менеджер по продажам</div>
-                <img src="images/Phone.png" alt="Телефон" style="float: left;">
-                <div>(000) 000-00-00</div>
-            </div>
-            <div class="question-block">
-                <div><b>Чат on-line</b></div>
-                <div>с консультантом</div>
-                <img src="images/Chat.png" alt="Чат on-line">
-            </div>
-            <div class="question-block">
-                <div><b>Перезвоните мне</b></div>
-                <div>обратный звонок</div>
-                <img src="images/Call.png" alt="Перезвоните мне">
+        <div class="footer-background-one">
+            <div class="container">
+                <h2>Почему летние шины покупают у нас?</h2>
+                <div class="advantage-block"><img src="images/AutoRIA.png" alt="AUTO.RIA">
+                    <div><strong>Нам доверяют</strong></div>
+                    <div class="text-small">интернет-магазин автомобильного сайта №1 в Украине AUTO.RIA.con</div>
+                </div>
+                <div class="advantage-block"><img src="images/Shipping.png" alt="Shipping">
+                    <div><strong>Выгодно</strong></div>
+                    <div class="text-small">Бесплатная доставка по Украине курьерскими службами</div>
+                    <img src="images/InTime+NovaPoshta.png" alt="InTime и NovaPoshta">
+                </div>
+                <div class="advantage-block"><img src="images/Cash.png" alt="Cash">
+                    <div><strong>Без предоплат</strong></div>
+                    <div class="text-small">Оплата только после получений товара</div>
+                </div>
+                <div class="advantage-block"><img src="images/24_7.png" alt="24/7">
+                    <div><strong>Работаем</strong></div>
+                    <div class="text-small">Примем заказов по телефону и на сайте круглосуточно</div>
+                </div>
             </div>
         </div>
-        <div class="footer-blocks-three">
-            <div><b>Хотите первым знать об акциях, скидаках и распродажах</b></div>
-            <div>Подпишитесь на электронную рассылку</div>
-            <form action="">
-                <input id="e-mail-input" placeholder="Введите адрес">
-                <button id="e-mail-botton">Подписаться &#128386;</button>
-            </form>
+        <div class="footer-background-two">
+            <div class="container">
+                <h3>Остались вопросы?</h3>
+                <div class="communication-block">
+                    <div><b>Телефон менеджера</b></div>
+                    <div class="text-small">для вопросов и консультации</div>
+                    <p>
+                        <img src="images/photo.png" alt="Константин Озаренский" style="float: left;">
+                        <div><b>Константин Озаренский</b></div>
+                        <div class="text-small">Менеджер по продажам</div>
+                        <a href="tel:0000000000" class="footer-link-phone"><img src="images/Phone.png" alt="Телефон"
+                                style="float: left;"><b>(000) 000-00-00</b></a>
+                    </p>
+                </div>
+                <div class="communication-block">
+                    <div><b>Чат on-line</b></div>
+                    <div class="text-small">с консультантом</div>
+                    <a href=""><img src="images/Chat.png" alt="Чат on-line"></a>
+                </div>
+                <div class="communication-block">
+                    <div><b>Перезвоните мне</b></div>
+                    <div class="text-small">обратный звонок</div>
+                    <a href=""><img src="images/Call.png" alt="Перезвоните мне"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-background-three">
+            <div class="container">
+                <div class="subscribe-block">
+                    <div><b>Хотите первым знать об акциях, скидаках и распродажах</b></div>
+                    <div class="text-small">Подпишитесь на электронную рассылку</div>
+                </div>
+                <form action="">
+                    <input class="e-mail-input" placeholder=" Введите адрес">
+                    <button class="e-mail-botton"><img src="images/subscribe.png" alt="Подписаться"></button>
+                </form>
+            </div>
         </div>
     </footer>
 
