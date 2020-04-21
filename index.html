@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>AUTO.RIA.com</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <script>
+        var src = `${location.protocol}//${location.host.split(':')[0]}:35729/livereload.js?snipver=1`;
+        var script = `<script src="${src}"\>\<\/script>`;
+        document.write(script);
+    </script>
+
 </head>
 
 <body>
@@ -19,8 +26,8 @@
                 <div class="header-communication-one">
                     <div class="line1">
                         <img src="images/iPhone.png" class="icon-phone" alt="Телефон">
-                        <a href="tel:0674052353" class="link-phone"><b>(067) 405 23 53</b></a>,
-                        <a href="tel:0504611714" class="link-phone"><b>(050) 461 17 14</b></a>
+                        <a href="tel:0674052353" class="link-phone">(067) 405 23 53,</a>
+                        <a href="tel:0504611714" class="link-phone">(050) 461 17 14</a>
                     </div>
                     <div>
                         <a href="" class="other-phones">Смотреть другие номера</a>
@@ -32,7 +39,7 @@
                     </a>
                     <div>
                         <a href="" class="link-order">
-                            <img src="images/Online.png" alt="Online">
+                            <img src="images/Online.png" class="icon-online" alt="Online">
                             <b>Чат</b> с консультантом
                         </a>
                     </div>
@@ -43,14 +50,22 @@
 
     <main>
         <section>
-            <img src="images/HeadAuto.png" alt="Автомобиль с колёсами" class="banner">
+            <div class="banner">
+                <div class="parallelogram-large">
+                    <div class="parallelogram-small"></div>
+                </div>
+                <div class="banner-text">
+                    <div class="banner-text-large">Купите летние шины</div>
+                    <div class="banner-text-small">для своего авто в 4 клика</div>
+                </div>
+            </div>
         </section>
 
         <section id="vehicle-class" class="clear">
             <div class="container">
-                <h1>
-                    <span class="h1-triangle-green-one">1</span>Выберите класс авто:
-                </h1>
+                <h3>
+                    <span class="h3-triangle-green-one"><span class="h3-number">1</span></span>Выберите класс авто:
+                </h3>
                 <div class="cars-container">
                     <div class="car-type">
                         <div class="car-type-headline">
@@ -113,9 +128,9 @@
 
         <section id="tire-diameter" class="clear">
             <div class="container">
-                <h1>
-                    <span class="h1-triangle-green-two">2</span>Выберите диаметр шины:
-                </h1>
+                <h3>
+                    <span class="h3-triangle-green-two"><span class="h3-number">2</span></span>Выберите диаметр шины:
+                </h3>
                 <div class="diameters-container text-large">
                     <div class="diameter-block">
                         <p>R 13</p>
@@ -141,10 +156,10 @@
 
         <section id="tire-size" class="clear">
             <div class="container">
-                <h1>
-                    <span class="h1-triangle-orange-three">3</span>Выберите ширину/высоту шины:
-                </h1>
-
+                <h3>
+                    <span class="h3-triangle-orange-three"><span class="h3-number">3</span></span>Выберите ширину/высоту
+                    шины:
+                </h3>
                 <div class="sizes-container text-large">
                     <div class="size-block">
                         <p>185/80</p>
@@ -171,48 +186,138 @@
                         <p>185/80</p>
                     </div>
                 </div>
+                <img class="points" src="images/4.png" alt="4">
             </div>
+
         </section>
 
-        <section class="tire-sale" class="clear">
-            <div class="container">
+        <section id="tire-sale" class="clear">
+            <div class="container background">
                 <img src="images/GreenLine.png" alt="Green Line">
-                <div>Мы подобрали летние шины типоразмера 185/80 R14C для среднего класса авто</div>
+                <div class="tire-sale-text">Мы подобрали летние шины типоразмера <span class="green-text">185/80
+                        R14C</span> для среднего
+                    класса авто</div>
                 <div class="tires-container">
                     <div class="tire-block">
-                        <div class="tire">
-                            <div class="tire-name"><b>Michelin Agilis</b></div>
+                        <div class="tire-heder-name">
+                            <div class="tire-name">Michelin Agilis</div>
+                        </div>
+                        <div class="tire-main-block">
                             <img src="images/Wheel.png" alt="Колесо">
+                        </div>
+                        <div class="tire-footer-block">
+                            <div class="tire-footer-line1">
+                                <div class="tire-footer-param-one">R14C</div>
+                                <div class="tire-footer-param-two">185/80</div>
+                                <div class="tire-footer-param-three"><a href=""
+                                        class="tire-footer-detail-up">Подробнее</a></div>
+                            </div>
+                            <div class="tire-footer-line2">
+                                <div class="tire-footer-price">1 196 грн</div>
+                                <button class="buy-botton">КУПИТЬ</button>
+                            </div>
                         </div>
                     </div>
                     <div class="tire-block">
-                        <div class="tire-name">
-                            <div class="tire-name"><b>Michelin Agilis</b></div>
+                        <div class="tire-heder-name">
+                            <div class="tire-name">Michelin Agilis</div>
+                            <img src="images/ADAC.png" class="mark" alt="ADAC">
+                        </div>
+                        <div class="tire-main-block">
                             <img src="images/Wheel.png" alt="Колесо">
+                        </div>
+                        <div class="tire-footer-block">
+                            <div class="tire-footer-line1">
+                                <div class="tire-footer-param-one">R14C</div>
+                                <div class="tire-footer-param-two">185/80</div>
+                                <div class="tire-footer-param-three"><a href="" class="tire-footer-detail">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="tire-footer-line2">
+                                <div class="tire-footer-price">1 196 грн</div>
+                                <button class="buy-botton">КУПИТЬ</button>
+                            </div>
                         </div>
                     </div>
                     <div class="tire-block">
-                        <div class="tire">
-                            <div class="tire-name"><b>Michelin Agilis</b></div>
+                        <div class="tire-heder-name">
+                            <div class="tire-name">Michelin Agilis</div>
+                        </div>
+                        <div class="tire-main-block">
                             <img src="images/Wheel.png" alt="Колесо">
+                        </div>
+                        <div class="tire-footer-block">
+                            <div class="tire-footer-line1">
+                                <div class="tire-footer-param-one">R14C</div>
+                                <div class="tire-footer-param-two">185/80</div>
+                                <div class="tire-footer-param-three"><a href="" class="tire-footer-detail">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="tire-footer-line2">
+                                <div class="tire-footer-price">1 196 грн</div>
+                                <button class="buy-botton">КУПИТЬ</button>
+                            </div>
                         </div>
                     </div>
                     <div class="tire-block">
-                        <div class="tire">
-                            <div class="tire-name"><b>Michelin Agilis</b></div>
+                        <div class="tire-heder-name">
+                            <div class="tire-name">Michelin Agilis</div>
+                        </div>
+                        <div class="tire-main-block">
                             <img src="images/Wheel.png" alt="Колесо">
+                        </div>
+                        <div class="tire-footer-block">
+                            <div class="tire-footer-line1">
+                                <div class="tire-footer-param-one">R14C</div>
+                                <div class="tire-footer-param-two">185/80</div>
+                                <div class="tire-footer-param-three"><a href="" class="tire-footer-detail">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="tire-footer-line2">
+                                <div class="tire-footer-price">1 196 грн</div>
+                                <button class="buy-botton">КУПИТЬ</button>
+                            </div>
                         </div>
                     </div>
                     <div class="tire-block">
-                        <div class="tire">
-                            <div class="tire-name"><b>Michelin Agilis</b></div>
+                        <div class="tire-heder-name">
+                            <div class="tire-name">Michelin Agilis</div>
+                        </div>
+                        <div class="tire-main-block">
                             <img src="images/Wheel.png" alt="Колесо">
+                        </div>
+                        <div class="tire-footer-block">
+                            <div class="tire-footer-line1">
+                                <div class="tire-footer-param-one">R14C</div>
+                                <div class="tire-footer-param-two">185/80</div>
+                                <div class="tire-footer-param-three"><a href="" class="tire-footer-detail">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="tire-footer-line2">
+                                <div class="tire-footer-price">1 196 грн</div>
+                                <button class="buy-botton">КУПИТЬ</button>
+                            </div>
                         </div>
                     </div>
                     <div class="tire-block">
-                        <div class="tire">
-                            <div class="tire-name"><b>Michelin Agilis</b></div>
+                        <div class="tire-heder-name">
+                            <div class="tire-name">Michelin Agilis</div>
+                            <img src="images/eco.png" class="mark" alt="eco">
+                        </div>
+                        <div class="tire-main-block">
                             <img src="images/Wheel.png" alt="Колесо">
+                        </div>
+                        <div class="tire-footer-block">
+                            <div class="tire-footer-line1">
+                                <div class="tire-footer-param-one">R14C</div>
+                                <div class="tire-footer-param-two">185/80</div>
+                                <div class="tire-footer-param-three"><a href="" class="tire-footer-detail">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="tire-footer-line2">
+                                <div class="tire-footer-price">1 196 грн</div>
+                                <button class="buy-botton">КУПИТЬ</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -220,7 +325,7 @@
                     <div>Мы подобрали для Вашего авто только <b>самые популярные</b> среди украинских автомоилистов
                         модели.
                     </div>
-                    <a href="">Посмотреть все предложения для Вашего авто</a>
+                    <a href="" class="link-order">Посмотреть все предложения для Вашего авто</a>
                 </div>
             </div>
         </section>
@@ -229,49 +334,50 @@
     <footer>
         <div class="footer-background-one">
             <div class="container">
-                <h2>Почему летние шины покупают у нас?</h2>
+                <h4>Почему летние шины покупают у нас?</h4>
                 <div class="advantage-block"><img src="images/AutoRIA.png" alt="AUTO.RIA">
-                    <div><strong>Нам доверяют</strong></div>
-                    <div class="text-small">интернет-магазин автомобильного сайта №1 в Украине AUTO.RIA.con</div>
+                    <div><strong>НАМ ДОВЕРЯЮТ</strong></div>
+                    <div class="advantage-text text-small">интернет-магазин автомобильного сайта №1 в Украине
+                        AUTO.RIA.con</div>
                 </div>
                 <div class="advantage-block"><img src="images/Shipping.png" alt="Shipping">
-                    <div><strong>Выгодно</strong></div>
-                    <div class="text-small">Бесплатная доставка по Украине курьерскими службами</div>
+                    <div><strong>ВЫГОДНО</strong></div>
+                    <div class="advantage-text text-small">Бесплатная доставка по Украине курьерскими службами</div>
                     <img src="images/InTime+NovaPoshta.png" alt="InTime и NovaPoshta">
                 </div>
                 <div class="advantage-block"><img src="images/Cash.png" alt="Cash">
-                    <div><strong>Без предоплат</strong></div>
-                    <div class="text-small">Оплата только после получений товара</div>
+                    <div><strong>БЕЗ ПРЕДОПЛАТ</strong></div>
+                    <div class="advantage-text text-small">Оплата только после получений товара</div>
                 </div>
                 <div class="advantage-block"><img src="images/24_7.png" alt="24/7">
-                    <div><strong>Работаем</strong></div>
-                    <div class="text-small">Примем заказов по телефону и на сайте круглосуточно</div>
+                    <div><strong>РАБОТАЕМ</strong></div>
+                    <div class="advantage-text text-small">Примем заказов по телефону и на сайте круглосуточно</div>
                 </div>
             </div>
         </div>
         <div class="footer-background-two">
             <div class="container">
-                <h3>Остались вопросы?</h3>
+                <h4>Остались вопросы?</h4>
                 <div class="communication-block">
                     <div><b>Телефон менеджера</b></div>
                     <div class="text-small">для вопросов и консультации</div>
-                    <p>
-                        <img src="images/photo.png" alt="Константин Озаренский" style="float: left;">
+                    <div class="manager-name">
+                        <img src="images/photo.png" class="icon-photo" alt="Константин Озаренский">
                         <div><b>Константин Озаренский</b></div>
                         <div class="text-small">Менеджер по продажам</div>
-                        <a href="tel:0000000000" class="footer-link-phone"><img src="images/Phone.png" alt="Телефон"
-                                style="float: left;"><b>(000) 000-00-00</b></a>
-                    </p>
+                        <a href="tel:0000000000" class="footer-link-phone"><img src="images/Phone.png"
+                                class="icon-phone-footer" alt="Телефон"><b> (000) 000-00-00</b></a>
+                    </div>
                 </div>
                 <div class="communication-block">
                     <div><b>Чат on-line</b></div>
                     <div class="text-small">с консультантом</div>
-                    <a href=""><img src="images/Chat.png" alt="Чат on-line"></a>
+                    <a href=""><img src="images/Chat.png" class="start-chat" alt="Чат on-line"></a>
                 </div>
                 <div class="communication-block">
                     <div><b>Перезвоните мне</b></div>
                     <div class="text-small">обратный звонок</div>
-                    <a href=""><img src="images/Call.png" alt="Перезвоните мне"></a>
+                    <a href=""><img src="images/Call.png" class="order" alt="Перезвоните мне"></a>
                 </div>
             </div>
         </div>
@@ -281,9 +387,12 @@
                     <div><b>Хотите первым знать об акциях, скидаках и распродажах</b></div>
                     <div class="text-small">Подпишитесь на электронную рассылку</div>
                 </div>
-                <form action="">
-                    <input class="e-mail-input" placeholder=" Введите адрес">
-                    <button class="e-mail-botton"><img src="images/subscribe.png" alt="Подписаться"></button>
+                <form class="form" action="">
+                    <input class="email-input" placeholder=" Введите адрес">
+                    <button class="email-botton">
+                        <div class="email-botton-text">Подписаться </div>
+                        <img src="images/subscribe.png" alt="Подписаться">
+                    </button>
                 </form>
             </div>
         </div>

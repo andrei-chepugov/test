@@ -1,6 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 15;
+    line-height: 1.5;
 }
 
 .text-large {
@@ -22,10 +23,10 @@ a:hover, a:active {
 
 .container {
     width: 940px;
-    padding-top: 15px;
+    padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
@@ -58,6 +59,7 @@ header .container {
 
 a.link-phone {
     color: black;
+    font-size: 20px;
     padding-top: 5px;
     vertical-align: middle;
     text-decoration: none;
@@ -65,17 +67,18 @@ a.link-phone {
 
 a.other-phones {
     color: rgb(37, 103, 153);
+    font-size: 11px;
     text-decoration-style: dotted;
 }
 
 a.other-phones:after {
     content: "";
     position: relative;
-    top: 12px;
-    left: 3px;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid rgb(37, 103, 153);
+    top: 10px;
+    left: 5px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid rgb(37, 103, 153);
 }
 
 .header-communication-two {
@@ -84,37 +87,81 @@ a.other-phones:after {
     text-align: left;
 }
 
+.icon-online {
+    vertical-align: middle;
+}
+
 .link-order {
     text-decoration: none;
 }
 
 .banner {
-    width: 100%;
-    margin-bottom: -50px;
+    background-image: url(images/HeadAuto.png);
+    background-size: 100%;
+    height: 450px;
+    padding-top: 50px;
+    padding-left: 120px;
+    background-repeat: no-repeat;
+}
+
+.parallelogram-large {
+    width: 640px;
+    height: 45px;
+    background: rgb(255, 191, 0, 0.2);
+    transform: skew(-30deg);
+    padding-top: 65px;
+}
+
+.parallelogram-small {
+    width: 640px;
+    height: 45px;
+    background: rgb(255, 165, 0, 0.6);
+}
+
+.banner-text {
+    transform: skew(0deg);
+    margin-top: -120px;
+    margin-left: 70px;
+}
+
+.banner-text-large {
+    color: white;
+    font-size: 55px;
+}
+
+.banner-text-small {
+    color: white;
+    font-size: 35px;
+    line-height: 0.5;
 }
 
 .clear {
     clear: both;
 }
 
-h1 {
+h3 {
     display: inline-block;
 }
 
-.h1-triangle-green-one {
+.h3-triangle-green-one {
     color: white;
     font-size: large;
-    padding: 15px 25px 25px 25px;
+    padding: 20px 20px 20px 20px;
     background-image: url("images/1.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
 
+.h3-number {
+    font-size: 25px;
+}
+
 .car-type {
+    line-height: 1;
     padding-top: 50px;
     float: left;
-    width: 225px;
-    margin: 5px;
+    width: 215px;
+    margin: 10px;
 }
 
 .car-type-headline {
@@ -145,7 +192,7 @@ h1 {
     display: none;
     position: absolute;
     background-color: rgb(238, 238, 238);
-    max-width: 405px;
+    max-width: 450px;
     min-height: 50px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     padding: 12px 16px;
@@ -156,10 +203,10 @@ h1 {
     display: block;
 }
 
-.h1-triangle-green-two {
+.h3-triangle-green-two {
     color: white;
     font-size: large;
-    padding: 15px 25px 25px 25px;
+    padding: 20px 20px 20px 20px;
     background-image: url("images/2.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -169,6 +216,7 @@ h1 {
     float: right;
     width: 550px;
     padding-top: 15px;
+    margin-right: 80px;
 }
 
 .diameter-block {
@@ -181,8 +229,7 @@ h1 {
     border-style: solid;
     border-color: rgb(229, 229, 229);
     border-radius: 5px;
-    margin-left: 10px;
-    margin-bottom: 50px;
+    margin: 5px;
     font-weight: bold;
 }
 
@@ -198,10 +245,10 @@ h1 {
     background-color: rgb(110, 177, 32);
 }
 
-.h1-triangle-orange-three {
+.h3-triangle-orange-three {
     color: white;
     font-size: large;
-    padding: 15px 25px 25px 25px;
+    padding: 20px 20px 20px 20px;
     background-image: url("images/3.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -210,22 +257,22 @@ h1 {
 .sizes-container {
     float: right;
     width: 500px;
-    padding-top: 10px;
+    padding-top: 15px;
+    margin-right: 70px;
 }
 
 .size-block {
     text-align: center;
     vertical-align: middle;
     display: inline-block;
-    width: 90px;
+    width: 85px;
     height: 30px;
     color: rgb(61, 61, 61);
     border: 2px;
     border-style: solid;
     border-color: rgb(229, 229, 229);
     border-radius: 5px;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    margin: 5px;
     font-weight: bold;
 }
 
@@ -241,40 +288,171 @@ h1 {
     background-color: rgb(110, 177, 32);
 }
 
+.points {
+    margin-top: 5px;
+    margin-left: 25px;
+}
+
+#tire-sale {
+    background-image: url(images/background.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.background {
+    padding-top: 0px;
+}
+
+.tire-sale-text {
+    margin-top: 20px;
+}
+
 .tires-container {
     float: right;
     width: 940px;
-    padding-top: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.green-text {
+    color: rgb(110, 177, 32);
+    font-weight: bold;
 }
 
 .tire-block {
     float: left;
-    width: 285px;
-    height: 400px;
+    width: 290px;
+    height: 420px;
     line-height: 20px;
-    text-align: center;
-    border: 2px;
+    background-color: white;
+    border: 1px;
     border-style: solid;
     border-color: rgb(229, 229, 229);
     border-radius: 5px;
-    margin-top: 30px;
-    margin-right: auto;
-    margin-bottom: auto;
-    margin-left: 20px;
+    margin: 10px;
+}
+
+.tire-heder-name {
+    text-align: left;
+    height: 60px;
 }
 
 .tire-name {
-    text-align: left;
+    float: left;
+    padding-top: 15px;
+    padding-left: 15px;
+    font-weight: bold;
+}
+
+.mark {
+    float: right;
+}
+
+.tire-main-block {
+    text-align: center;
+}
+
+.tire-footer-line1 {
+    float: left;
+    width: 190px;
+    height: 80px;
+}
+
+.tire-footer-line2 {
+    float: left;
+    width: 95px;
+    height: 80px;
+}
+
+.tire-footer-param-one {
+    float: left;
+    width: 79px;
+    height: 30px;
+    background-color: rgb(240, 240, 240);
+    padding: 5px 0px 0px 15px;
+    border-right-style: solid;
+    border-width: 1px;
+    border-color: rgb(200, 200, 200);
+}
+
+.tire-footer-param-two {
+    float: left;
+    width: 80px;
+    height: 30px;
+    background-color: rgb(240, 240, 240);
+    padding: 5px 0px 0px 15px;
+}
+
+.tire-footer-param-three {
+    float: left;
+    width: 160px;
+    height: 40px;
+    padding: 15px 0px 0px 15px;
+    text-decoration: none;
+}
+
+.tire-footer-detail {
+    text-decoration: none;
+}
+
+.tire-footer-detail:after {
+    content: "";
+    position: relative;
+    top: 12px;
+    left: 5px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid rgb(37, 103, 153);
+}
+
+.tire-footer-detail-up {
+    height: 40px;
+    text-decoration: none;
+}
+
+.tire-footer-detail-up:after {
+    content: "";
+    position: relative;
+    top: -9px;
+    left: 5px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid rgb(37, 103, 153);
+}
+
+.tire-footer-price {
+    text-align: center;
+    font-size: large;
+    width: 100px;
+    height: 35px;
+    color: rgb(86, 162, 32);
+}
+
+.buy-botton {
+    position: relative;
+    font-size: 18px;
+    color: white;
+    border: none;
+    width: 100px;
+    height: 45px;
+    background-color: rgb(99, 170, 29);
+    border-radius: 3px;
 }
 
 .tire-proposal {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 footer {
     text-align: center;
     width: 100%;
     margin: auto;
+}
+
+h4 {
+    margin-top: 5px;
+    font-size: 18px;
 }
 
 .footer-background-one {
@@ -290,6 +468,10 @@ footer {
     margin-top: 10px;
 }
 
+.advantage-text {
+    width: 210px;
+}
+
 .footer-background-two {
     width: 100%;
     height: 250px;
@@ -297,14 +479,19 @@ footer {
 
 .communication-block {
     float: left;
-    margin-top: 20px;
-    margin-bottom: 50px;
+    margin-top: 10px;
     width: 300px;
     height: 100px;
 }
 
-.manager {
+.manager-name {
     text-align: left;
+    margin-top: 20px;
+}
+
+.icon-photo {
+    float: left;
+    margin-right: 20px;
 }
 
 a.footer-link-phone {
@@ -314,9 +501,12 @@ a.footer-link-phone {
     text-decoration: none;
 }
 
-.subscribe-block {
-    margin-top: 20px;
-    margin-bottom: 20px;
+.start-chat {
+    margin-top: 10px;
+}
+
+.order {
+    margin-top: 10px;
 }
 
 .footer-background-three {
@@ -325,22 +515,45 @@ a.footer-link-phone {
     background-color: rgb(238, 238, 238);
 }
 
-.e-mail-input {
+.subscribe-block {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email-input {
     position: relative;
-    padding: 0px;
     float: left;
-    margin-left: 180px;
-    margin-right: 0px;
-    width: 400px;
+    font-style: italic;
+    padding: 0px;
+    width: 300px;
     height: 38px;
     border: 1px;
     border-radius: 3px;
     border-style: solid;
+    border-color: rgb(172, 172, 172);
 }
 
-.e-mail-botton {
+.email-botton {
     position: relative;
-    border: none;
-    margin-right: 200px;
-    margin-top: -1px;
+    background-color: orange;
+    vertical-align: middle;
+    width: 138px;
+    height: 40px;
+    border: 1px;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: rgb(247, 136, 0);
+    margin-left: -2px;
+}
+
+.email-botton-text {
+    color: white;
+    float: left;
+    padding-top: 3px;
 }
