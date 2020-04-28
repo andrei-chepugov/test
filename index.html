@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>AUTO.RIA.com</title>
+    <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
 
     <script>
@@ -12,6 +13,7 @@
         var script = `<script src="${src}"\>\<\/script>`;
         document.write(script);
     </script>
+    <script src="listener.js"></script>
 
 </head>
 
@@ -128,7 +130,7 @@
 
         <section id="tire-diameter" class="clear">
             <div class="container">
-                <h3>
+                <h3 class="h3">
                     <span class="h3-triangle-green-two"><span class="h3-number">2</span></span>Выберите диаметр шины:
                 </h3>
                 <div class="diameters-container text-large">
@@ -156,34 +158,37 @@
 
         <section id="tire-size" class="clear">
             <div class="container">
-                <h3>
-                    <span class="h3-triangle-orange-three"><span class="h3-number">3</span></span>Выберите ширину/высоту
-                    шины:
-                </h3>
-                <div class="sizes-container text-large">
-                    <div class="size-block">
-                        <p>185/80</p>
-                    </div>
-                    <div class="size-block">
-                        <p>185/80</p>
-                    </div>
-                    <div class="size-block">
-                        <p>185/80</p>
-                    </div>
-                    <div class="size-block">
-                        <p>185/80</p>
-                    </div>
-                    <div class="size-block active">
-                        <p>185/80</p>
-                    </div>
-                    <div class="size-block">
-                        <p>185/80</p>
-                    </div>
-                    <div class="size-block">
-                        <p>185/80</p>
-                    </div>
-                    <div class="size-block">
-                        <p>185/80</p>
+                <div>
+                    <h3 class="h3">
+                        <span class="h3-triangle-orange-three"><span class="h3-number">3</span></span>Выберите
+                        ширину/высоту
+                        шины:
+                    </h3>
+                    <div class="sizes-container text-large">
+                        <div class="size-block">
+                            <p>185/80</p>
+                        </div>
+                        <div class="size-block">
+                            <p>185/80</p>
+                        </div>
+                        <div class="size-block">
+                            <p>185/80</p>
+                        </div>
+                        <div class="size-block">
+                            <p>185/80</p>
+                        </div>
+                        <div class="size-block active">
+                            <p>185/80</p>
+                        </div>
+                        <div class="size-block">
+                            <p>185/80</p>
+                        </div>
+                        <div class="size-block">
+                            <p>185/80</p>
+                        </div>
+                        <div class="size-block">
+                            <p>185/80</p>
+                        </div>
                     </div>
                 </div>
                 <img class="points" src="images/4.png" alt="4">
@@ -332,7 +337,7 @@
     </main>
 
     <footer>
-        <div class="footer-background-one">
+        <div class="footer-background-one clear">
             <div class="container">
                 <h4>Почему летние шины покупают у нас?</h4>
                 <div class="advantage-block"><img src="images/AutoRIA.png" alt="AUTO.RIA">
@@ -355,7 +360,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer-background-two">
+        <div class="footer-background-two clear">
             <div class="container">
                 <h4>Остались вопросы?</h4>
                 <div class="communication-block">
@@ -381,7 +386,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer-background-three">
+        <div class="footer-background-three clear">
             <div class="container">
                 <div class="subscribe-block">
                     <div><b>Хотите первым знать об акциях, скидаках и распродажах</b></div>

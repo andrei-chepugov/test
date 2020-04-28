@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "livereload": "^0.9.1"
+    "livereload": "^0.9.1",
+    "normalize.css": "^8.0.1"
   },
   "devDependencies": {},
   "scripts": {
